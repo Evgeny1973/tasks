@@ -12,12 +12,12 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
         mappings:
-            App:
+            Task:
                 type: attribute
                 is_bundle: false
-                dir: '%kernel.project_dir%/src/Entity'
-                prefix: 'App\Entity'
-                alias: App
+                dir: '%kernel.project_dir%/src/Model/Task/Entity'
+                prefix: 'App\Model\Task\Entity'
+                alias: Task
         controller_resolver:
             auto_mapping: false
 
